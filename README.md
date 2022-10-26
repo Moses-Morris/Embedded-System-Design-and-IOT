@@ -4,16 +4,16 @@ The Embedded System Design Process:
 
 Theory:
 
-1 . Introduction to Embedded System Design and IoT.
+1. Introduction to Embedded System Design and IoT.
 2. Choosing the Right Processors and Embedded Product lifecycle.
 3. Challenges and design issues in embedded systems, Assemblers, Compilers,    Linkers, Loaders, Debuggers, Embedded circuit Emulators & JTAG, profilers, and tests.
-4 . Intro to real-time concepts.
-5 . Intro to IoT, trends IoT Architectures, Applications, IoT standards, and protocols.
+4. Intro to real-time concepts.
+5. Intro to IoT, trends IoT Architectures, Applications, IoT standards, and protocols.
 
 Fundamentals:
 
 6. 8051 Architecture-Keil.
-7 Interfacing switch, Relay with 8051.
+7. Interfacing switch, Relay with 8051.
 8. UART and SPI.
 9. LCD and IIC.
 10. 8051 Mini Project - Bluetooth - Based Home Automation.
