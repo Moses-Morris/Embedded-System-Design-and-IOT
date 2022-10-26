@@ -1,18 +1,18 @@
 Embedded System design and IOT 
-LCD 
+
+LCD in ESD's
+e
+
 how to setup LCD 
 
-1. 
-Introduction to LCD.
-2.
-Pin details and Descriptions.
-3.
-Schematics 
-4.
-Program.
+1. Introduction to LCD.
+2. Pin details and Descriptions.
+3. Schematics 
+4. Program.
 
 
 What is LCD :
+
 Liquid Crystal Display. This is an optical device that has light-modulating properties of liquid crystals combined with polarizers.
 Liquid crystals don't emit light directly. They use a backlight or reflector to produce images in color or monochrome…Has a back light.
 
