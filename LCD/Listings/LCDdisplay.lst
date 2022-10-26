@@ -1,0 +1,129 @@
+C51 COMPILER V9.60.0.0   LCDDISPLAY                                                        10/26/2022 13:36:08 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE LCDDISPLAY
+OBJECT MODULE PLACED IN .\Objects\LCDdisplay.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE LCDdisplay.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listing
+                    -s\LCDdisplay.lst) TABS(2) OBJECT(.\Objects\LCDdisplay.obj)
+
+line level    source
+
+   1          #include <reg51.h>
+   2          //#include <reg52.h> will produce an erro of redefinition
+   3          #include <stdio.h>
+   4          #define DATA P0
+   5          
+   6          //LCD serial bit connection ports
+   7          sbit RS = P0^0; //Register Select
+   8          sbit RW = P0^1; //Read Write
+   9          sbit LCD_ENABLE = P0^2; //lcd enable
+  10          
+  11          unsigned char message1[] = ("Hello"); 
+  12          unsigned char message2[] = ("ESD Masterclass");
+  13          void lcd_init(void);
+  14          void delay(int);
+  15          void lcd_cmd(unsigned char);
+  16          void lcd_data(unsigned char);
+  17          
+  18          void delay(int k)
+  19          {
+  20   1        unsigned int i;
+  21   1        for (i = 0; i < k; i++);
+  22   1      }
+  23          
+  24          void lcd_cmd(unsigned char command)
+  25          {
+  26   1        DATA = 0xF0 & command;  //upper nibble 1111 0000
+  27   1        RS = 0; //COMMAND in Register segments
+  28   1        RW = 0; //write in Read/write
+  29   1        LCD_ENABLE = 1;
+  30   1        delay(35);
+  31   1        LCD_ENABLE = 0;
+  32   1        
+  33   1        DATA = command <<4;
+  34   1        RS = 0; //COMMAND in Register segments
+  35   1        RW = 0; //write in Read/write
+  36   1        LCD_ENABLE = 1;
+  37   1        delay(35);
+  38   1        LCD_ENABLE = 0;
+  39   1      }
+  40          void lcd_data(unsigned char data1)
+  41          {
+  42   1        DATA = 0xF0 & data1;  //upper nibble 1111 0000
+  43   1        RS = 1; //COMMAND in Register segments
+  44   1        RW = 0; //write in Read/write
+  45   1        LCD_ENABLE = 1;
+  46   1        delay(35);
+  47   1        LCD_ENABLE = 0;
+  48   1        
+  49   1        
+  50   1        DATA = data1 <<4;
+  51   1        RS = 1; //COMMAND in Register segments
+  52   1        RW = 0; //write in Read/write
+  53   1        LCD_ENABLE = 1;
+  54   1        delay(35);
+C51 COMPILER V9.60.0.0   LCDDISPLAY                                                        10/26/2022 13:36:08 PAGE 2   
+
+  55   1        LCD_ENABLE = 0;
+  56   1      }
+  57          
+  58          void lcd_init(void)
+  59          {
+  60   1        unsigned int i;
+  61   1        lcd_cmd(0x28); //2 lines in 2x16 LCD
+  62   1        delay(15); //miliseconds
+  63   1        lcd_cmd(0x0C); //Display ON, cursor OFF in 2x16 LCD
+  64   1        delay(15); //miliseconds
+  65   1        lcd_cmd(0x06); //Display ON, cursor OFF in 2x16 LCD
+  66   1        delay(15); //miliseconds
+  67   1        lcd_cmd(0x01); //Display ON, cursor OFF in 2x16 LCD
+  68   1        delay(15); //miliseconds
+  69   1        
+  70   1        delay(5000);
+  71   1        
+  72   1        //Display message 1
+  73   1        lcd_cmd(0x80); //Force cursor to beginning of first linein 2x16 LCD
+  74   1        delay(15); //miliseconds
+  75   1        
+  76   1        i = 0;
+  77   1        while(message1[i] != '\0')//get to end of the line
+  78   1        {
+  79   2          lcd_data(message1[i]);//now print out the message
+  80   2          i++;
+  81   2        }
+  82   1        delay(50);
+  83   1        
+  84   1        //Display message 2
+  85   1        lcd_cmd(0x80); //Force cursor to beginning of first linein 2x16 LCD
+  86   1        delay(15); //miliseconds
+  87   1        
+  88   1        i = 0;
+  89   1        while(message2[i] != '\0')//get to end of the line
+  90   1        {
+  91   2          lcd_data(message2[i]);
+  92   2          i++;
+  93   2        }
+  94   1        delay(50);
+  95   1      }
+  96          
+  97          void main()
+  98          {
+  99   1        P0 = 0;
+ 100   1        lcd_init();
+ 101   1        delay(10);
+ 102   1        while(1);
+ 103   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    206    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     22    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
