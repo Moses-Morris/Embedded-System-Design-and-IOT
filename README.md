@@ -1,5 +1,4 @@
-
-231A	
+:smiley:
 
 Embedded System Design and IoT
 
