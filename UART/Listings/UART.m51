@@ -1,0 +1,47 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    10/25/2022  22:06:11  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\uartconfig.obj TO .\Objects\UART PRINT (.\Listings\UART.m51) RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\uartconfig.obj (UARTCONFIG)
+
+
+LINK MAP OF MODULE:  .\Objects\UART (UARTCONFIG)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\UART (UARTCONFIG)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\UART (UARTCONFIG)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        UARTCONFIG
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  -------         ENDMOD        UARTCONFIG
+
+*** WARNING L10: CANNOT DETERMINE ROOT SEGMENT
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0000H BYTE ( 0%) *
+******************************************************************************
+
+Program Size: data=0.0 xdata=0 code=0
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)
