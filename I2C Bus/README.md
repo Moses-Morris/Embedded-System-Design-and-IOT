@@ -1,12 +1,17 @@
-SPI : Serial peripheral interface.
+Inter-Integrated Circuit :: I2C
 
-How to sequence a Serial peripheral interface.
-:Serial peripheral interface.
 
-Serial peripheral interface:
-- Full Duplex, serial communication Protocol.
-- Synchronous Communication Protocol.
-- Four Wire Communication protocol.
-- Single Master Multi slave.
-- Widely used short-distance communication, primarily in embedded systems.
+How to configure an I2C in C programming:
+
+- You can connect multiple slaves to a single master.
+- Can connect many devices to other peripherals.
+- Require 2 wires. To connect.
+- A better alternative to UART - no limitations.
+- The Serial peripheral interface(SPI) requires many GPIOS
+- Is open drain - can damage drivers and excess power dissipation.
+
+
+* ACK : Acknowledgement, control of SDA line(slave / master) - send and receive..
+* SDA (Serial Data) – The line for the master and slave to send and receive data.
+* SCL (Serial Clock) – The line that carries the clock signal.
 
