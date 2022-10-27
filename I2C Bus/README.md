@@ -1,7 +1,7 @@
 SPI : Serial peripheral interface.
 
 How to sequence a Serial peripheral interface.
-Serial peripheral interface.
+:Serial peripheral interface.
 
 Serial peripheral interface:
 - Full Duplex, serial communication Protocol.
