@@ -1,0 +1,108 @@
+C51 COMPILER V9.60.0.0   BTDEVICE                                                          10/27/2022 10:39:17 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE BTDEVICE
+OBJECT MODULE PLACED IN .\Objects\BTDevice.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE BTDevice.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\
+                    -BTDevice.lst) TABS(2) OBJECT(.\Objects\BTDevice.obj)
+
+line level    source
+
+   1          #include <reg51.h>
+   2          
+   3          void Uart_Init();
+   4          void Uart_Txchar(char);
+   5          char Uart_Rxchar(); //Return
+   6          void Uart_SendString(char *);
+   7          
+   8          sbit Lamp = P0^0; //GPIO ports for lamp
+   9          sbit Fan = P0^1; //GPIO ports for Fan
+  10          
+  11          void Uart_Init()
+  12          {
+  13   1        TMOD = 0x20;
+  14   1        TH1 = 0xFD;
+  15   1        SCON = 0x50;
+  16   1        TR1 = 1;
+  17   1      }
+  18          
+  19          //transmit the data
+  20          void Uart_Txchar(char Data)
+  21          {
+  22   1        SBUF = Data;
+  23   1        while(TI == 0);
+  24   1        TI = 0;
+  25   1      }
+  26          
+  27          //Receive data for transmission
+  28          char Uart_Rxchar()
+  29          {
+  30   1        char dat;
+  31   1        while(RI == 0);
+  32   1        RI = 0;
+  33   1        dat = SBUF;
+  34   1        return (dat);
+  35   1      }
+  36          
+  37          void Uart_SendString(char *string)
+  38          {
+  39   1        int i;
+  40   1        for (i = 0; string[i] != 0; i++)
+  41   1        {
+  42   2          Uart_Txchar(string[i]);
+  43   2        }
+  44   1      }
+  45          
+  46          void main()
+  47          {
+  48   1        char Data_in;
+  49   1        Uart_Init();
+  50   1        P0 = 0;
+  51   1        while(1)
+  52   1        {
+  53   2          Data_in = Uart_Rxchar(); // receive the data so that it can be transmitted from the bluetoth device
+  54   2          if(Data_in == '1')
+C51 COMPILER V9.60.0.0   BTDEVICE                                                          10/27/2022 10:39:17 PAGE 2   
+
+  55   2          {
+  56   3            Lamp = 1;
+  57   3            Uart_SendString("Lamp On");
+  58   3          }
+  59   2          else if(Data_in == '2')
+  60   2          {
+  61   3            Lamp = 0;
+  62   3            Uart_SendString("Lamp Off");
+  63   3          }
+  64   2          else if(Data_in == '3')
+  65   2          {
+  66   3            Fan = 1;
+  67   3            Uart_SendString("Fan On");
+  68   3            
+  69   3          }
+  70   2          else if(Data_in == '4')
+  71   2          {
+  72   3            Fan = 0;
+  73   3            Uart_SendString("Fan Off");
+  74   3            
+  75   3          }
+  76   2          else
+  77   2          {
+  78   3            Uart_SendString("Choose a state:  1, 2, 3, 4");
+  79   3          }
+  80   2        }
+  81   1        
+  82   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    146    ----
+   CONSTANT SIZE    =     60    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----       3
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
