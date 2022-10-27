@@ -1,7 +1,7 @@
 UART -  Universal Asynchronous Receiver and transmitter.
 
 
-This is how to configure UART in C programming
+This is how to configure UART in C programming:
 
 - UART parameters:
 1. Baud Rate( 9600,19200,115200). - how many bits per second can be transmitted- depends on the number of clocks.
