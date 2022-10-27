@@ -9,14 +9,15 @@ Bluetooth control home automation:
 How to configure the microcontroller chipset using C
 
 
-* HC - 05 Bluetooth module.
--> Configure Baud rates. (Default 9600)
--> Has an LED blinker.
--> Default password 1234 or 0000
--> Default Mode : Data mode.
--> Default communication : Slave.
--> Firmware : LINVOR.
--> Data mode Baud rate 9600, 8 , N , 1
--> Command  mode Baud rate 38400, 8 , N , 1
+ HC - 05 Bluetooth module:
+
+- Configure Baud rates. (Default 9600)
+- Has an LED blinker.
+- Default password 1234 or 0000
+- Default Mode : Data mode.
+- Default communication : Slave.
+- Firmware : LINVOR.
+- Data mode Baud rate 9600, 8 , N , 1
+- Command  mode Baud rate 38400, 8 , N , 1
 
 
