@@ -1,0 +1,63 @@
+C51 COMPILER V9.60.0.0   LEDSCROLL                                                         10/25/2022 21:33:17 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE LEDSCROLL
+OBJECT MODULE PLACED IN .\Objects\ledScroll.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE ledScroll.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings
+                    -\ledScroll.lst) TABS(2) OBJECT(.\Objects\ledScroll.obj)
+
+line level    source
+
+   1          #include <reg51.h>
+   2          #define LED P2
+   3          
+   4          void delay(void);
+   5          void left(void);
+   6          void right(void);
+   7          unsigned int j;
+   8          
+   9          
+  10          void delay()
+  11          {
+  12   1        unsigned int i;
+  13   1        for (i = 0; i < 10000; i++);
+  14   1      }
+  15          
+  16          
+  17          void right()
+  18          {
+  19   1        for (j = 0x80; j >= 0x01; j>>= 1 )  //right shifting one time
+  20   1        {
+  21   2          LED = j;
+  22   2          delay();
+  23   2        }
+  24   1      }
+  25          
+  26          void left()
+  27          {
+  28   1        for (j = 0x01; j <= 0x80; j<<= 1 )  //left shifting one time
+  29   1        {
+  30   2          LED = j;
+  31   2          delay();
+  32   2        }
+  33   1      }
+  34          
+  35          void main()
+  36          {
+  37   1        left();
+  38   1        right();
+  39   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     95    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      2    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

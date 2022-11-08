@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: moses macharia, cybernetics, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.37.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.7.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+C:\Users\MOSES\Desktop\Embedded Design systems and IOT\lab\ARM chpsets\LPC4088\Switch\switch.uvproj
+Project File Date:  11/03/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+assembling startup_LPC407x_8x_177x_8x.s...
+switch.c(1): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\lpc407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(122): warning: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)" [-W#warnings]
+    #warning "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+     ^
+1 warning generated.
+compiling switch.c...
+linking...
+.\switch.axf: Error: L6218E: Undefined symbol SystemInit (referred from startup_lpc407x_8x_177x_8x.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+".\switch.axf" - 1 Error(s), 1 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>

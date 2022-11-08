@@ -1,0 +1,1 @@
+-mcpu=arm7tdmi -mthumb-interwork -o "./LPC1248.elf" "./startup.o" "./lpc2148.o" -nostartfiles -lm

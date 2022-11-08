@@ -1,0 +1,426 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: moses macharia, cybernetics, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.37.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.7.0
+Dialog DLL:      TCM.DLL V1.56.1.0
+ 
+<h2>Project:</h2>
+C:\Users\MOSES\Desktop\Embedded Design systems and IOT\lab\ARM chpsets\LPC4088\LCD\lcddisplay.uvproj
+Project File Date:  11/07/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+assembling startup_LPC407x_8x_177x_8x.s...
+lcddisplay.c(1): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(122): warning: #warning is a language extension [-Wpedantic]
+    #warning "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+     ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(122): warning: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)" [-W#warnings]
+lcddisplay.c(1): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(147): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(312): error: unknown type name 'inline'
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __NOP(void)
+                                   ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+lcddisplay.c(1): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(147): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(323): error: unknown type name 'inline'
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __WFI(void)
+                                   ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+lcddisplay.c(1): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(147): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(334): error: unknown type name 'inline'
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __WFE(void)
+                                   ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+lcddisplay.c(1): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(147): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(344): error: unknown type name 'inline'
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __SEV(void)
+                                   ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+lcddisplay.c(1): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(147): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(356): error: unknown type name 'inline'
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __ISB(void)
+                                   ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+lcddisplay.c(1): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(147): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(367): error: unknown type name 'inline'
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __DSB(void)
+                                   ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+lcddisplay.c(1): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(147): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(378): error: unknown type name 'inline'
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __DMB(void)
+                                   ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+lcddisplay.c(1): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(147): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(391): error: unknown type name 'inline'
+__attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __REV(uint32_t value)
+                                   ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+lcddisplay.c(1): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(147): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(391): warning: 'always_inline' attribute only applies to functions [-Wignored-attributes]
+__attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __REV(uint32_t value)
+                 ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(391): error: expected ';' after top level declarator
+__attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __REV(uint32_t value)
+                                                           ^
+                                                           ;
+lcddisplay.c(1): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(412): warning: '__CM3_REV' is not defined, evaluates to 0 [-Wundef]
+#if (__CM3_REV < 0x0201)                   /* core r2p1 */
+     ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(1302): error: unknown type name 'inline'
+__STATIC_INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(1322): error: unknown type name 'inline'
+__STATIC_INLINE uint32_t NVIC_GetPriorityGrouping(void)
+^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(1322): error: expected ';' after top level declarator
+__STATIC_INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(1583): error: unknown type name 'inline'
+__STATIC_INLINE uint32_t ITM_SendChar (uint32_t ch)
+^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(1583): error: expected ';' after top level declarator
+__STATIC_INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+lcddisplay.c(1): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(395): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(405): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(409): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(420): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(641): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+        union
+        ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(648): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+        union
+        ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(653): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+        union
+        ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(659): warning: // comments are not allowed in this language [-Wcomment]
+        uint8_t  RESERVED1[7];//Reserved
+                              ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(684): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(690): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(694): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(725): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(730): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(734): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+lcddisplay.c(3): warning: // comments are not allowed in this language [-Wcomment]
+//Register select
+^
+lcddisplay.c(16): warning: no previous extern declaration for non-static variable 'Lcd_line1' [-Wmissing-variable-declarations]
+unsigned char Lcd_line1[]={"CORTEX series dev Board"};
+              ^
+lcddisplay.c(16): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+unsigned char Lcd_line1[]={"CORTEX series dev Board"};
+^
+lcddisplay.c(17): warning: no previous extern declaration for non-static variable 'Lcd_line2' [-Wmissing-variable-declarations]
+unsigned char Lcd_line2[]={"LCD DEMO PROGRAM"};
+              ^
+lcddisplay.c(17): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+unsigned char Lcd_line2[]={"LCD DEMO PROGRAM"};
+^
+lcddisplay.c(45): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        DATA = cmd<<24; //msb 4 bits
+             ~ ~~~^~~~
+lcddisplay.c(49): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        DATA = cmd<<28; //LSB 4 bits
+             ~ ~~~^~~~
+lcddisplay.c(59): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        DATA = data<<24; //msb 4 bits
+             ~ ~~~~^~~~
+lcddisplay.c(63): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        DATA = data<<28; //LSB 4 bits
+             ~ ~~~~^~~~
+lcddisplay.c(56): warning: no previous prototype for function 'lcd_data' [-Wmissing-prototypes]
+void lcd_data(unsigned char data)
+     ^
+lcddisplay.c(56): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void lcd_data(unsigned char data)
+^
+static 
+lcddisplay.c(82): warning: signed shift result (0xF0000000) sets the sign bit of the shift expression's type ('int') and becomes negative [-Wshift-sign-overflow]
+        LPC_GPIO0->DIR  = 0xF<<28;
+                          ~~~^ ~~
+lcddisplay.c(82): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        LPC_GPIO0->DIR  = 0xF<<28;
+                        ~ ~~~^~~~
+lcddisplay.c(89): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+                unsigned char i = 0;
+                              ^
+29 warnings and 14 errors generated.
+compiling lcddisplay.c...
+C:/Keil_v5/ARM/Startup/NXP/LPC407x_8x_177x_8x/system_LPC407x_8x_177x_8x.c(35): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(122): warning: #warning is a language extension [-Wpedantic]
+    #warning "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+     ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(122): warning: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)" [-W#warnings]
+C:/Keil_v5/ARM/Startup/NXP/LPC407x_8x_177x_8x/system_LPC407x_8x_177x_8x.c(35): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(147): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(312): error: unknown type name 'inline'
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __NOP(void)
+                                   ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+C:/Keil_v5/ARM/Startup/NXP/LPC407x_8x_177x_8x/system_LPC407x_8x_177x_8x.c(35): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(147): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(323): error: unknown type name 'inline'
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __WFI(void)
+                                   ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+C:/Keil_v5/ARM/Startup/NXP/LPC407x_8x_177x_8x/system_LPC407x_8x_177x_8x.c(35): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(147): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(334): error: unknown type name 'inline'
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __WFE(void)
+                                   ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+C:/Keil_v5/ARM/Startup/NXP/LPC407x_8x_177x_8x/system_LPC407x_8x_177x_8x.c(35): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(147): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(344): error: unknown type name 'inline'
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __SEV(void)
+                                   ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+C:/Keil_v5/ARM/Startup/NXP/LPC407x_8x_177x_8x/system_LPC407x_8x_177x_8x.c(35): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(147): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(356): error: unknown type name 'inline'
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __ISB(void)
+                                   ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+C:/Keil_v5/ARM/Startup/NXP/LPC407x_8x_177x_8x/system_LPC407x_8x_177x_8x.c(35): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(147): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(367): error: unknown type name 'inline'
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __DSB(void)
+                                   ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+C:/Keil_v5/ARM/Startup/NXP/LPC407x_8x_177x_8x/system_LPC407x_8x_177x_8x.c(35): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(147): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(378): error: unknown type name 'inline'
+__attribute__( ( always_inline ) ) __STATIC_INLINE void __DMB(void)
+                                   ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+C:/Keil_v5/ARM/Startup/NXP/LPC407x_8x_177x_8x/system_LPC407x_8x_177x_8x.c(35): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(147): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(391): error: unknown type name 'inline'
+__attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __REV(uint32_t value)
+                                   ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+C:/Keil_v5/ARM/Startup/NXP/LPC407x_8x_177x_8x/system_LPC407x_8x_177x_8x.c(35): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(147): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(391): warning: 'always_inline' attribute only applies to functions [-Wignored-attributes]
+__attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __REV(uint32_t value)
+                 ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cmInstr.h(391): error: expected ';' after top level declarator
+__attribute__( ( always_inline ) ) __STATIC_INLINE uint32_t __REV(uint32_t value)
+                                                           ^
+                                                           ;
+C:/Keil_v5/ARM/Startup/NXP/LPC407x_8x_177x_8x/system_LPC407x_8x_177x_8x.c(35): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(121): warning: In file included from...
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(412): warning: '__CM3_REV' is not defined, evaluates to 0 [-Wundef]
+#if (__CM3_REV < 0x0201)                   /* core r2p1 */
+     ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(1302): error: unknown type name 'inline'
+__STATIC_INLINE void NVIC_SetPriorityGrouping(uint32_t PriorityGroup)
+^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(1322): error: unknown type name 'inline'
+__STATIC_INLINE uint32_t NVIC_GetPriorityGrouping(void)
+^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(1322): error: expected ';' after top level declarator
+__STATIC_INLINE uint32_t NVIC_GetPriorityGrouping(void)
+                        ^
+                        ;
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(1583): error: unknown type name 'inline'
+__STATIC_INLINE uint32_t ITM_SendChar (uint32_t ch)
+^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(87): note: expanded from macro '__STATIC_INLINE'
+  #define __STATIC_INLINE  static inline
+                                  ^
+C:/Keil_v5/ARM/CMSIS/Include\core_cm3.h(1583): error: expected ';' after top level declarator
+__STATIC_INLINE uint32_t ITM_SendChar (uint32_t ch)
+                        ^
+                        ;
+C:/Keil_v5/ARM/Startup/NXP/LPC407x_8x_177x_8x/system_LPC407x_8x_177x_8x.c(35): warning: In file included from...
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(395): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(405): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(409): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(420): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(641): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+        union
+        ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(648): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+        union
+        ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(653): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+        union
+        ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(659): warning: // comments are not allowed in this language [-Wcomment]
+        uint8_t  RESERVED1[7];//Reserved
+                              ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(684): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(690): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(694): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(725): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(730): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/INC/NXP/LPC407x_8x_177x_8x\LPC407x_8x_177x_8x.h(734): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Keil_v5/ARM/Startup/NXP/LPC407x_8x_177x_8x/system_LPC407x_8x_177x_8x.c(263): warning: // comments are not allowed in this language [-Wcomment]
+//     External Memory Controller Setup (EMC) ---------------------------------
+^
+C:/Keil_v5/ARM/Startup/NXP/LPC407x_8x_177x_8x/system_LPC407x_8x_177x_8x.c(1198): warning: no previous extern declaration for non-static variable 'SystemCoreClock' [-Wmissing-variable-declarations]
+uint32_t SystemCoreClock = __CORE_CLK;/*!< System Clock Frequency (Core Clock)*/
+         ^
+C:/Keil_v5/ARM/Startup/NXP/LPC407x_8x_177x_8x/system_LPC407x_8x_177x_8x.c(1198): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t SystemCoreClock = __CORE_CLK;/*!< System Clock Frequency (Core Clock)*/
+^
+C:/Keil_v5/ARM/Startup/NXP/LPC407x_8x_177x_8x/system_LPC407x_8x_177x_8x.c(1351): warning: implicit declaration of function '__nop' [-Wimplicit-function-declaration]
+  while (ms--) { __nop(); __nop(); __nop(); __nop(); __nop(); __nop(); }
+                 ^
+C:/Keil_v5/ARM/Startup/NXP/LPC407x_8x_177x_8x/system_LPC407x_8x_177x_8x.c(1357): warning: no previous prototype for function 'SystemInit_ExtMemCtl' [-Wmissing-prototypes]
+void SystemInit_ExtMemCtl(void) {
+     ^
+C:/Keil_v5/ARM/Startup/NXP/LPC407x_8x_177x_8x/system_LPC407x_8x_177x_8x.c(1357): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SystemInit_ExtMemCtl(void) {
+^
+static 
+22 warnings and 14 errors generated.
+compiling system_LPC407x_8x_177x_8x.c...
+".\Objects\lcddisplay.axf" - 28 Error(s), 51 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

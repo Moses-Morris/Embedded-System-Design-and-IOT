@@ -1,0 +1,4 @@
+Dependencies for Project 'LPC1248', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: <unknown>
+F (.\Startup.s)(0x559D2110)(-mcpu=arm7tdmi --gdwarf-2 -mthumb-interwork -IC:/Keil_v5/ARM/INC/Philips -I"C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/11.2 2022.02/arm-none-eabi/include" --defsym __UVISION_VERSION=537--MD ./startup.d -o ./startup.o)
+F (.\LPC2148.c)(0x635EC06E)(-c -mcpu=arm7tdmi -gdwarf-2 -MD -Wall -O -mapcs-frame -mthumb-interwork -IC:/Keil_v5/ARM/INC/Philips -I"C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/11.2 2022.02/arm-none-eabi/include" -D__UVISION_VERSION="537"-o ./lpc2148.o)

@@ -1,0 +1,4 @@
+Dependencies for Project 'weather', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: <unknown>
+F (.\Startup.s)(0x559D2110)()
+F (.\weather.c)(0x63613534)()

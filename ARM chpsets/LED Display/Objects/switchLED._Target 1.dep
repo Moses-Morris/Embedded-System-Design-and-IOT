@@ -1,0 +1,4 @@
+Dependencies for Project 'switchLED.', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: <unknown>
+F (.\Startup.s)(0x559D2110)()
+F (.\ledwsitch.c)(0x635ED154)()
