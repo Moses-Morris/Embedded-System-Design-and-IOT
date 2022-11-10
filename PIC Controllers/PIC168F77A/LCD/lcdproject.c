@@ -1,10 +1,10 @@
 #include <pic.h>
 __CONFIG (0X3F72)
 
-#define RS REO
+#define RS REO //REgister select pin
 #define RW RE1
 #define EN RE2
-#define DATA PORTD
+#define DATA PORTD //Data relay Port
 
 #define DATADIR TRISD
 #define CNTRLDIR TRISE
