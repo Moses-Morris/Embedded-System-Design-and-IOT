@@ -1,5 +1,5 @@
 #include<pic.h>
-CONFIG (0X3F72);
+__CONFIG (0X3F72);
 void delayms(unsigned int);
 void delayms(unsigned int ms)
 (
