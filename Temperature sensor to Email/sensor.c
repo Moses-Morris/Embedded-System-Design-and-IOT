@@ -1,6 +1,6 @@
 #define  SW_VERSION "Thinkspeak.com"
-//#include <ESP8266WiFi.h>
-//#include <dht.h>
+#include <ESP8266WiFi.h>
+#include <dht.h>
 
 dht DHT;
 
@@ -9,6 +9,7 @@ dht DHT;
 WiFiClient client;
 WiFiServer server(80);
 
+//Configure custom configuration
 const char *MY_SSID = "wifiname" //the wifi name
 const char *MY_PWD = "pwd" //the wifi password
 const char *TS_SERVER = "api.thinkspeak.com" //The connection to thinkspeak api
@@ -42,9 +43,9 @@ void sendDataTS(void)
     if(client.connect(TS_SERVER, 80))
     {
         String postStr = TS_API_KEY;
-        postStr+="&field1="
+        postStr+="&field1=";
         postStr+=String(DHT.Humidity,1);
-        postStr+="&field2="
+        postStr+="&field2=";
         postStr+=String(DHT.temperature,1);
         postStr+="\r\n\r\n";
 
