@@ -1,6 +1,6 @@
 #define  SW_VERSION "Thinkspeak.com"
-#include <ESP8266Wifi.h>
-#include <dht.h>
+//#include <ESP8266WiFi.h>
+//#include <dht.h>
 
 dht DHT;
 
@@ -16,8 +16,8 @@ String TS_API_KEY = "ApiKey" //The api keey provided for your project demo
 
 void connectWifi()
 {
-    Wifi.begin(MY_SSID, MY_PWD);
-    while(Wifi.status() != WL_CONNECTED)
+    WiFi.begin(MY_SSID, MY_PWD);
+    while(WiFi.status() != WL_CONNECTED)
     {
         delay(100);
         Serial.print(".");
@@ -48,18 +48,27 @@ void sendDataTS(void)
         postStr+=String(DHT.temperature,1);
         postStr+="\r\n\r\n";
 
-        client.print("POST /update ")
-        
-
-
+        client.print("POST /update HTTP/1.1\n");
+        client.print("Host: api.thinksspeak.com\n");
+        client.print("Connection: close\n");
+        client.print("X-THINKSPEAKAPIKEY: "+TS_API_KEY+"\n");
+        client.print(postStr.length());
+        client.print(postStr);
+        delay(100);
     }
+    client.stop();
 }
 
 void setup()
 {
-
+    //The setup code that will run once
+    Serial.begin(9600);
+    delay(10);
+    connectWifi();
 }
 void loop()
 {
-
-}
+    //The code executes repeatedly
+    sendDataTS();
+    delay(10000);
+}
