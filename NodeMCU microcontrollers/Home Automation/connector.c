@@ -3,7 +3,7 @@
 #include <BlynkSimpleEsp8266.h>
 #include "DHT.h"
 
-#define DHTPIN D1
+#define DHTPIN D1 //connect pin to DHT11
 #define DHTTYPE DHT11
 
 DHT dht(DHTPIN, DHTTYPE);

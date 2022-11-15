@@ -15,3 +15,7 @@ Software:
 4. nodeMCU JSON link.
 
 The IoT Power Relay is a controllable power relay equipped with four outputs that help you create an Internet of Things project with safe, reliable power control. With the IoT Power Relay you can easily control the power going to a device with an Arduino, Raspberry Pi or other single-board computer or microcontroller.
+
+
+#NB
+##Please not this code is written in ARDUINO IDE
