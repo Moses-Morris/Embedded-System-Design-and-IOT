@@ -19,3 +19,4 @@ The IoT Power Relay is a controllable power relay equipped with four outputs tha
 
 #NB
 ##Please not this code is written in ARDUINO IDE
+#It might not run on c editors
