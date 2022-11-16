@@ -3,7 +3,7 @@ HOME Automation using google assistant and NodeMCU.
 control devices.
 
 Agenda:
-1. Blynk app.
+1. Blynk app. - connects with  the Node MCU 
 2. Relay light bulb.
 3. nodeMCU
 4. Light bulb.
